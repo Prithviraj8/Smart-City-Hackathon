@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SmartCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l1s-GH-Z9e">
+                                <rect key="frame" x="72.5" y="431" width="269" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="jDP-Kl-tIA"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart City Hackathon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9b-qe-Jq3">
+                                <rect key="frame" x="74" y="75" width="266" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8jq-7m-zqn"/>
+                                    <constraint firstAttribute="width" constant="266" id="sPQ-Au-2T3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g1k-d1-buJ">
+                                <rect key="frame" x="72.5" y="345" width="269" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="ouc-Sk-cfE"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tY-Z7-Xxs" customClass="UIButtonX" customModule="SmartCity" customModuleProvider="target">
+                                <rect key="frame" x="139.5" y="518" width="135" height="43"/>
+                                <color key="backgroundColor" red="0.4026015228" green="0.4026015228" blue="0.4026015228" alpha="0.83451947770000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Lkp-Na-AeM"/>
+                                    <constraint firstAttribute="width" constant="135" id="uJo-s1-gum"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Sign In/Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="SignInOrLogIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OUd-RI-3aF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3tY-Z7-Xxs" firstAttribute="top" secondItem="l1s-GH-Z9e" secondAttribute="bottom" constant="53" id="7Id-xm-KWe"/>
+                            <constraint firstItem="3tY-Z7-Xxs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Yc-lh-xt6"/>
+                            <constraint firstItem="o9b-qe-Jq3" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="E8i-Zx-3Ua"/>
+                            <constraint firstItem="l1s-GH-Z9e" firstAttribute="top" secondItem="g1k-d1-buJ" secondAttribute="bottom" constant="52" id="Gia-qi-c3K"/>
+                            <constraint firstItem="g1k-d1-buJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="301" id="MEH-c5-yRI"/>
+                            <constraint firstItem="g1k-d1-buJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="O5v-nO-82c"/>
+                            <constraint firstItem="l1s-GH-Z9e" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dWo-fe-tEJ"/>
+                            <constraint firstItem="o9b-qe-Jq3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="pZm-g4-vEN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="SignIn_Up" destination="3tY-Z7-Xxs" id="CTp-A0-Zqx"/>
+                        <outlet property="emailTextField" destination="g1k-d1-buJ" id="W1r-WD-7q7"/>
+                        <outlet property="passwordTextField" destination="l1s-GH-Z9e" id="v7d-9O-bgs"/>
+                        <segue destination="e8h-9p-Jaq" kind="presentation" identifier="mainpage" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="eJw-yO-ZoP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </scene>
+        <!--Garbage LocationVC-->
+        <scene sceneID="Zgd-u5-IrQ">
+            <objects>
+                <viewController id="e8h-9p-Jaq" customClass="GarbageLocationVC" customModule="SmartCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G5Y-JR-K8u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKo-yr-dqD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxn-vH-AUT" customClass="UIButtonX" customModule="SmartCity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="779" width="414" height="117"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="87i-12-hHc"/>
+                                    <constraint firstAttribute="height" constant="117" id="SJb-8v-2O7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Find more locations for garbage.">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getMoreLocations:" destination="e8h-9p-Jaq" eventType="touchUpInside" id="OFY-6b-3zp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I42-NZ-6wf" firstAttribute="top" secondItem="hKo-yr-dqD" secondAttribute="top" constant="44" id="9pn-fe-TPe"/>
+                            <constraint firstItem="wxn-vH-AUT" firstAttribute="centerX" secondItem="I42-NZ-6wf" secondAttribute="centerX" id="BZo-Fk-EgX"/>
+                            <constraint firstItem="wxn-vH-AUT" firstAttribute="top" secondItem="hKo-yr-dqD" secondAttribute="bottom" constant="-7" id="TH3-AN-0gi"/>
+                            <constraint firstItem="wxn-vH-AUT" firstAttribute="bottom" secondItem="I42-NZ-6wf" secondAttribute="bottom" constant="34" id="U1q-Rq-dZC"/>
+                            <constraint firstItem="hKo-yr-dqD" firstAttribute="leading" secondItem="I42-NZ-6wf" secondAttribute="leading" id="ixC-dg-WKQ"/>
+                            <constraint firstItem="I42-NZ-6wf" firstAttribute="trailing" secondItem="hKo-yr-dqD" secondAttribute="trailing" id="rKJ-uo-4qV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I42-NZ-6wf"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="hKo-yr-dqD" id="zhi-UW-l1s"/>
+                        <segue destination="fVQ-Lh-hKn" kind="presentation" identifier="GarbageInfo" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="mwe-ki-UKD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iA-gF-z5i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="82"/>
+        </scene>
+        <!--Garbage InfoVC-->
+        <scene sceneID="m2D-4h-Q5T">
+            <objects>
+                <viewController id="fVQ-Lh-hKn" customClass="GarbageInfoVC" customModule="SmartCity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xsz-vK-PX9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIk-z9-E1Y" customClass="UIViewX" customModule="SmartCity" customModuleProvider="target">
+                                <rect key="frame" x="20" y="288" width="374" height="330"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garbage" translatesAutoresizingMaskIntoConstraints="NO" id="Gu5-Mp-Jn5">
+                                        <rect key="frame" x="87" y="8" width="200" height="139"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="139" id="Bce-Lz-i7o"/>
+                                            <constraint firstAttribute="width" constant="200.00000000000045" id="nRA-dV-d8f"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bu0-6e-Dk3" customClass="UIButtonX" customModule="SmartCity" customModuleProvider="target">
+                                        <rect key="frame" x="87" y="246" width="200" height="45"/>
+                                        <color key="backgroundColor" red="0.0" green="0.59492417890105465" blue="1" alpha="0.83451947770000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="a4F-76-EAf"/>
+                                            <constraint firstAttribute="width" constant="200" id="u8O-OB-TX3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Get direcations">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="getDirections:" destination="fVQ-Lh-hKn" eventType="touchUpInside" id="pw3-Jy-Nh0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looks like this needs to be cleaned up right away." lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsj-6D-fks">
+                                        <rect key="frame" x="90" y="155" width="194" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="AmG-BN-bSu"/>
+                                            <constraint firstAttribute="width" constant="194" id="GyU-uO-1b3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bu0-6e-Dk3" firstAttribute="top" secondItem="gsj-6D-fks" secondAttribute="bottom" constant="26" id="04m-CS-UBw"/>
+                                    <constraint firstAttribute="bottom" secondItem="bu0-6e-Dk3" secondAttribute="bottom" constant="39" id="7fr-Qr-LJ4"/>
+                                    <constraint firstItem="bu0-6e-Dk3" firstAttribute="centerX" secondItem="VIk-z9-E1Y" secondAttribute="centerX" id="ETS-Xi-EWv"/>
+                                    <constraint firstAttribute="height" constant="330" id="LGD-VO-LM5"/>
+                                    <constraint firstItem="gsj-6D-fks" firstAttribute="top" secondItem="Gu5-Mp-Jn5" secondAttribute="bottom" constant="8" id="NBf-X1-hU7"/>
+                                    <constraint firstAttribute="width" constant="374" id="QJT-ns-ICR"/>
+                                    <constraint firstItem="Gu5-Mp-Jn5" firstAttribute="centerX" secondItem="VIk-z9-E1Y" secondAttribute="centerX" id="ULo-PY-q5Z"/>
+                                    <constraint firstItem="gsj-6D-fks" firstAttribute="centerX" secondItem="VIk-z9-E1Y" secondAttribute="centerX" id="bFH-yR-ff8"/>
+                                    <constraint firstItem="Gu5-Mp-Jn5" firstAttribute="top" secondItem="VIk-z9-E1Y" secondAttribute="top" constant="8" id="udI-sr-G03"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="36"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VIk-z9-E1Y" firstAttribute="centerX" secondItem="jIJ-3B-26C" secondAttribute="centerX" id="kZe-DU-gRT"/>
+                            <constraint firstItem="VIk-z9-E1Y" firstAttribute="centerY" secondItem="jIJ-3B-26C" secondAttribute="centerY" id="oFN-vE-uTo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jIJ-3B-26C"/>
+                    </view>
+                    <connections>
+                        <outlet property="garbage" destination="Gu5-Mp-Jn5" id="eFJ-71-RFP"/>
+                        <segue destination="e8h-9p-Jaq" kind="presentation" identifier="directions" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="DE4-RN-uId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D65-xD-dW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="garbage" width="640" height="480"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DE4-RN-uId"/>
+    </inferredMetricsTieBreakers>
+</document>
